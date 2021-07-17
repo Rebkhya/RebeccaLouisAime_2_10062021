@@ -34,6 +34,7 @@ h3{
    font-weight: 700;
    font-size: 1.1em;
    overflow-wrap: break-word;
+   padding: 5px 0;
 }
 ul{
    list-style: none;
@@ -353,7 +354,6 @@ a{
    border: 1px #F2F2F2 solid;
    border-radius: 50%;
    color: #0065FC;
-   align-items: center;
    padding: 10px 15px 10px 15px;
    margin-right: 20px;
    margin-top: 10px;
@@ -408,12 +408,8 @@ a{
     margin-left: 30px;
 }
 .heb{
-   flex-wrap: nowrap;
    width: 275px;
-   
-   border-radius: 25px;
    margin-bottom: 25px;
-   justify-content: flex-start;
 }
 .heb img{
    width: 97%;
@@ -500,7 +496,6 @@ a{
    flex-wrap: nowrap;
    width: 85%;
    height: 150px;
-   border-radius: 25px;
    margin-bottom: 20px;
 }
 .p_pop{
@@ -512,11 +507,8 @@ a{
 .pop p{
   font-size: 1em;
   font-weight: normal;
-  width: auto;
 }
 .pop_link{
-   display: flex;
-   flex-direction: column;
    align-items: flex-start;
    flex-wrap: wrap;
    justify-content: center;
@@ -673,24 +665,30 @@ a{
 }
 /*Footer a propos alignement gauche, espacement entre les elements*/
 .a_propos{
-   bottom: 0;
-   left: 0;
-   right: 0;
    background-color: #F2F2F2;
-   text-align: left;
    justify-content: space-between;
    margin: 40px 0px 0px 0px;
-   padding-top: 10px;
+   padding-top: 30px;
+   padding-right: 350px;
 }
 .a_propos article{
    text-align: justify;
-   margin-right: 50px;
+   
 }
 .a_propos h3{
    margin-left: 40px;
 }
+li{
+   padding-bottom: 10px;
+}
+@media screen and (max-width: 991.98px){
+   .a_propos{
+      padding-right: 40px;
+   }
+}
 @media screen and (max-width: 575.98px) {
    .a_propos{
       flex-direction: column;
+      
    }
 }
