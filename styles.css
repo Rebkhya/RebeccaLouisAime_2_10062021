@@ -409,7 +409,7 @@ a{
 }
 .heb{
    width: 275px;
-   margin-bottom: 25px;
+   margin: 0 5px 25px 5px;
 }
 .heb img{
    width: 96%;
